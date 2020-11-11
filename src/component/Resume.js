@@ -5,11 +5,14 @@ import pdf from '../public/wlug.pdf';
 const Resume = () =>{
 
   return(
-    <div style={{overflow:"scroll"}}>
+    <div class="mt-3"style={{"overflow-y":"scroll" ,"height":"600px"}}>
     <PDFViewer
-      page="2"
-      document={{ url:'https://images.kw.com/docs/2/1/2/212345/1285134779158_htwfaip.pdf',}}
-     />
+            document={{
+                url: 'https://arxiv.org/pdf/quant-ph/0410100.pdf',
+            }}
+
+            hideNavbar="false"
+        />
      </div>
   );
 }

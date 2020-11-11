@@ -1,16 +1,33 @@
 import React from 'react';
 import myphoto from '../public/logo2.png';
-
+import ProjectItem from './ProjectItem';
 const Projects = () =>{
-  return(
-    <div >
-      <div class="card" style={{width:"300px"}}>
-        <img class="card-img-top" src={myphoto} alt="Card Image" />
-        <div class="card-body">
-          <h4 class="card-title">Project Name</h4>
-          <p class="card-text">Project Discription</p>
+  var projects = [
+    {
+      title:"PaperDApp",
+      description:"PaperDApp is a Blockchain based Paperless office web application which can be used by organizations for digital document management.",
+      techStack:"Ethereum, IPFS, React"
+    },
+    {
+      title:"PaperDApp",
+      description:"PaperDApp is a Blockchain based Paperless office web application which can be used by organizations for digital document management.",
+      techStack:"Ethereum, IPFS, React"
+    },
+    {
+      title:'PaperDApp',
+      description:'PaperDApp is a Blockchain based Paperless office web application which can be used by organizations for digital document management.',
+      techStack:"Ethereum, IPFS, React"
+    }
 
-        </div>
+  ];
+
+  return(
+    <div class="row overflow-auto" style={{"overflow-y":"scroll","height":"600px"}}>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-9 " >
+      {projects.map((item) =>
+        <ProjectItem key={item.id} item={item} />
+      )}
       </div>
     </div>
   );
