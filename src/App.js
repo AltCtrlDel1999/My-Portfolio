@@ -10,6 +10,7 @@ import Header from './component/Header';
 import Home from './component/Home';
 import Projects from './component/Projects';
 import Resume from './component/Resume';
+import Contact from './component/Contact';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
         </Route>
         <Route path="/resume">
           <Resume />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
 

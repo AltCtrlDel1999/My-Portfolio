@@ -23,8 +23,11 @@ const Header = () => {
               <li class="nav-item ml-3">
                 <Link class="nav-link text-light" to='/projects'>Projects </Link>
               </li>
-              <li class="nav-item ml-3 mr-3">
+              <li class="nav-item ml-3">
                 <Link class="nav-link text-light" to='/resume'>Resume </Link>
+              </li>
+              <li class="nav-item ml-3 mr-3">
+                <Link class="nav-link text-light" to='/contact'>Contact </Link>
               </li>
 
           </ul>
